@@ -2,7 +2,6 @@ const fs = require("fs-extra");
 const path = require("path");
 const childProcess = require("child_process");
 
-// options is optional
 fs.readdirSync("./Summit").forEach(function (fileName) {
   console.log("Starting");
 
@@ -18,6 +17,9 @@ fs.readdirSync("./Summit").forEach(function (fileName) {
     fs.ensureDirSync(location1);
     fs.ensureDirSync(location2);
   } catch (err) {
+    console.warn(
+      "Somehow, this script was unable to create the needed folders. Send the author the below error."
+    );
     console.error(err);
   }
 
@@ -50,7 +52,7 @@ fs.readdirSync("./Summit").forEach(function (fileName) {
 
     console.log(`Finished moving ${fileName}`);
   } catch (err) {
-    console.log("Super unknown error. Send the author the below error.");
+    console.warn("Super unknown error. Send the author the below error.");
     console.error(err);
   }
 });

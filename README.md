@@ -27,6 +27,6 @@ Your console should report progress and eventually finish, with the files sorted
 
 - This will likely not work on Windows. A mac or linux box should be able to run this script.
 
-- The size of your folder will double. I chose to sort every game into two folders, one for each Tag+Character combo that was involved in the match. That means that "SFAT Fox vs DHIR Puff" will be placed into both the SFAT Fox and DHIR Puff folders. Trim away whatever you don't need, and if you know of a better sort method, write an issue on this repo. I might not fix it, but I'm certainly interested.
+- The size of your folder will double. I chose to sort every game into two folders, one for each Tag+Character combo that was involved in the match. That means that "SFAT Fox vs DHIR Puff" will be placed into both the "SFAT Fox" and "DHIR Puff" folders. Trim away whatever you don't need, and if you know of a better sort method, write an issue on this repo. I might not fix it, but I'm certainly interested.
 
-- Any player that didn't have a tag during the match will be sorted into the name of their character.
+- Any player that didn't have a tag during the match will be sorted into a folder by the name of their character.
